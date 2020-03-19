@@ -1,0 +1,21 @@
+Roinita Lucian-Teodor
+325CA - 2019
+
+Tema POO
+
+Logica programului a fost implementata in clasa GameManager, in care sunt
+instantiate obiectele de tip Player. Tot aici se apeleaza toate metodele
+care duc la solutionarea problemei.
+
+Fiecare strategie are clasa ei proprie care o extinde pe cea de baza
+(Player). Pe deasupra, clasele Greedy si Bribed extind clasa Basic,
+intrucat abordarea jocului in rolul de comerciant este foarte similara.
+
+Cartile sunt tinute intr-un obiect de tip Deck, ce contine o coada de
+obiecte de tip Goods.
+
+Bonusurile de la final sunt adaugate in ordinea ilegal -> legal, deoarece
+aplicarea bonusului ilegal duce la modificarea numarului de carti legale
+de pe taraba si implicit a bonusului legal. Cel ilegal este implementat
+in clasa Player, fiindca el nu depinde de ce au ceilalti jucatori in mana,
+iar cel legal in GameManager, deoarece necesita accesul la toti jucatorii.
